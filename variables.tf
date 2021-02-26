@@ -1,7 +1,7 @@
-variable "subscription_id" {
-    type = string
-    description = "Variable for our resource group"
-}
+# variable "subscription_id" {
+#     type = string
+#     description = "Variable for our resource group"
+# }
 
 variable "resourceGroupName" {
     type = string
