@@ -1,28 +1,14 @@
-# provider "azurerm"{
-#     features {}
-    
-#  subscription_id = ""  
-#  client_id       = ""
-#  client_secret   = ""
-#  tenant_id       = ""
-# }
+variable "subscriptionID" {
+    type = string
+    description = "Variable for our resource group"
+}
 
+variable "resourceGroupName" {
+    type = string
+    description = "name of resource group"
+}
 
-
-#  variable "client_id"{
-#       type = string
-#        description="Enter client id" 
-#     }
-#      variable "client_secret"{
-#          type = string
-#         description="Enter client secret"
-#     }
-#      variable "tenant_id"{
-#          type = string
-#         description="Enter tenant id"
-#     }
-  
-# variable "subscriptionID" {
-#     type = string
-#     description = "Variable for our resource group"
-# }
+variable "location" {
+    type = string
+    description = "location of your resource group"
+}
