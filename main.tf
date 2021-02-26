@@ -7,15 +7,15 @@ terraform {
   }
 }
 
-provider "azurerm"{
-    features {}
+# provider "azurerm"{
+#     features {}
     
- subscription_id = ""
- client_id       = ""
- client_secret   =""
- tenant_id       =""
+#  subscription_id = ""
+#  client_id       = ""
+#  client_secret   = ""
+#  tenant_id       = ""
 
-}
+# }
 
 
 resource "azurerm_resource_group" "resource_gp" {
