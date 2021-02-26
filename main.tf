@@ -7,6 +7,16 @@ terraform {
   }
 }
 
+provider "azurerm"{
+    features {}
+    
+ subscription_id = var.subscriptionID
+ client_id       = var.client_id
+ client_secret   =var.client_secret
+ tenant_id       = var.tenant_id
+
+}
+
 
 resource "azurerm_resource_group" "resource_gp" {
   name     = "DemoApp2"
